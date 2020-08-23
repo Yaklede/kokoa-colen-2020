@@ -1,0 +1,32 @@
+* {
+    box-sizing:border-box;
+}
+
+.login_header {
+    display:flex;
+    justify-content: center;
+    padding:5px 3px;
+}
+
+.login_header_column {
+    width:33%;
+}
+
+.login_header_column:first-child span {
+    margin:5px;
+}
+
+.login_header_column:nth-child(2) {
+    display:flex;
+    justify-content: center;
+}
+
+.login_header_column:nth-child(3) {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login_header_column .fa-battery-full {
+    margin:0px 5px;
+}
