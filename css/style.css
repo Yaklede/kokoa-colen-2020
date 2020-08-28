@@ -1,8 +1,30 @@
 @import "reset.css";
 @import "variables.css";
+
+
+
 @import "components/status_bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-components.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+
 @import"screen/login.css";
+@import "screen/friend.css";
+@import "screen/find.css";
+@import "screen/more.css";
+@import "screen/setting.css";
+@import "screen/chat.css";
+
 
 body {
+  color:#2e363e;
   font-family: "Open Sans", sans-serif;
+}
+
+.main_screen {
+  padding:0px var(--horizontal-space);
 }

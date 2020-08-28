@@ -1,0 +1,93 @@
+.nav {
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background-color:#f9f9fa;
+    padding:20px 50px;
+    border-top:1px solid rgba(121 , 121, 121, 0.3);
+    
+}
+
+.nav_list {
+    display:flex;
+    justify-content: space-between;
+}
+
+.nav_link {
+    position: relative;
+    color:#2e363e;
+}
+
+
+@keyframes chat_rotate {
+    0% {
+        transform:rotateY(0);
+    }
+    25% {
+        transform: translateY(-12px);
+    }
+    50% {
+        transform:rotateY(360deg);
+    } 
+    100% {
+        transform:none;
+    }
+}
+
+.nav__notification {
+    position: absolute;
+    left:15px;
+    bottom:15px;
+    animation:chat_rotate 3s ease-in-out infinite;
+}
+
+.nav_pointer {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color:tomato;
+    position: absolute;
+    left:30px;
+    bottom: 25px;
+}
+.setting_pointer_position {
+    position: relative;
+}
+.setting_pointer {
+    display:block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color:tomato;
+    position: absolute;
+    top:-4px;
+    right:-2px;
+}
+
+
+@keyframes navbuttonanimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.nav_btn {
+    transform: translateY(100px);
+    animation:navbuttonanimation 0.6s ease-in-out forwards;
+}
+
+.nav_btn:nth-child(2) {
+    animation-delay: 200ms;
+}
+
+.nav_btn:nth-child(3) {
+    animation-delay: 400ms;
+}
+
+.nav_btn:last-child {
+    animation-delay: 600ms;
+}
